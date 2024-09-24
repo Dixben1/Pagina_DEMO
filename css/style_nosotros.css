@@ -1,0 +1,394 @@
+/* REUTILIZABLES */
+.color-primario{
+    background-color: rgb(2,66,112);
+    color: #fff;
+}
+.color-secundario{
+    background-color: rgb(254,255,255);
+    color: #000;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.encabezado{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+.encabezado h1{
+    font-size: 48px;
+}
+.encabezado h2{
+    font-size: 36px;
+}
+p{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+/* NAVBAR */
+.navbar-collapse{
+    margin-right: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav a img{
+    margin-left: 20px;
+    width: 120px;
+    height: 120px;
+}
+nav a span{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(254,255,255);
+    margin-left: 27px;
+}
+nav button i{
+    color: white;
+    font-size: 50px;
+}
+.nav-item{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+.nav-link{
+    color: #fff;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.nav-link:hover{
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px #fff;
+    color: #01aded;
+}
+
+/* HERO */
+.hero .row{
+    width: 90%;
+    margin:20px auto;
+}
+.hero .columna{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .row .divHeroImg{
+    width: 90%;
+    padding-right: 20px;
+    margin: 0 auto;
+    height: 500px;
+}
+.hero .row .divHeroImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.hero .columna p{
+    text-align: end;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* MISION VISION */
+.mision-vision{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mision-vision .mis-vis{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+}
+.mis-vis .contenido{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 20px;
+}
+.mision-vision .contenido p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mision-vision .divMisVisImg{
+    height: 220px;
+}
+.mision-vision .divMisVisImg img{
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.mision-vision .divMisVisImg img:hover{
+    transform: scale(1.1);
+}
+
+/* VALORES */
+.valores .encabezado{
+    width: 90%;
+    margin: 20px auto;
+}
+.valores .contexto p{
+    margin: 10px;
+    font-size: 20px; 
+}
+.valores .valores-principales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:  0 20px 20px 20px;
+}
+.valores .valores-principales .valor{
+    margin: 0 10px 10px 10px;
+    width: 200px;
+}
+.valores .valor img{
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+.valores .valor:hover img{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3.5rem;
+    padding: 60px 60px 10px 60px;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h4{
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+.footer-content .links{
+    margin-top: 20px;
+}
+.footer-content li{
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: -30px;
+    margin-bottom: 10px;
+}
+.footer-content .links li a{
+    text-decoration: none;
+    color: rgb(254,255,255);
+    transition: all 0.5s ease-in;
+}
+.footer-content .links li a:hover{
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px #fff;
+}
+.footer-content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.footer-content form{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-content input{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    border-radius: 6px;
+    background: #fff;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+}
+.footer-content form button{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 50%;
+    transition: 0.5s ease;
+}
+.footer-content form button:hover{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 8px #fff;
+}
+.footer-content .icon{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    cursor: pointer;
+}
+.footer-content .icon i{
+    color: white;
+    font-size: 38px;
+    transition: all 0.2s ease-in-out;
+}
+.footer-content .icon i:hover{
+    font-size: 45px;
+    text-shadow: 1px 1px 2px #fff;
+}
+.derechosAutor{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.derechosAutor span{
+    font-weight: 400;
+}
+
+
+
+/* RESPONSIVE */
+/* NAVBAR */
+@media screen and (max-width:500px) {
+    nav a img{
+        width: 80px;
+        height: 80px;
+    }
+    nav a span{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    nav button i{
+        color: white;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1100px){
+    .navbar-collapse{
+        margin-right: 0;
+    }
+}
+/* FOOTER */
+@media screen and (max-width: 1092px) {
+    footer .footer-row{
+        justify-content: center;
+        gap: 4rem;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    footer .footer-row{
+        justify-content: center;
+        gap: 2rem;
+        padding: 20px;
+    }
+    .footer-content h4{
+        font-size: 0.9em;
+    }
+    .footer-content li{
+        font-size: 0.9em;
+    }
+    .footer-content p{
+        font-size: 0.9em;
+    }
+    .footer-content form button{
+        font-size: 0.9em;
+    }
+    .footer-content form button:hover{
+        font-size: 1.2em;
+    }
+    .footer-content .icon i{
+        font-size: 27px;
+    }
+    .footer-content .icon i:hover{
+        font-size: 30px;
+    }
+}
+/* HERO */
+@media screen and (max-width: 1440px){
+    .hero .columna p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .hero .columna p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 960px){
+    .hero .row .divHeroImg{
+        height: 400px;
+    }
+    .hero .columna p{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 425px){
+    .hero .row .divHeroImg{
+        height: 200px;
+    }
+    .hero .columna p{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+/* MISION Y VISION */
+@media screen and (max-width: 1024px){
+    .mision-vision .contenido p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 900px){
+    .mision-vision .mis-vis{
+        width: 100%;
+    }
+    .mis-vis .contenido{
+        padding: 20px;
+    }
+    .mision-vision .divMisVisImg{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .mision-vision .contenido p{
+        font-size: 12px;
+    }
+}
+/* VALORES */
+@media screen and (max-width: 768px){
+    .valores .contexto p{
+        font-size: 16px; 
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- TITULO -->
+    <title>INTIMODA</title>
+    <!-- METAELEMENTOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dixon Ramos">
+    
+    <!-- ICONO -->
+    <link rel="shortcut icon" href="imagenes/Logo_Intimoda.svg" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_contacto.css">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg color-primario">
+        <div class="container-fluid">
+            <!-- LOGO EMPRESA -->
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/Logo_Intimoda.svg" alt="Logo INTIMODA" class="d-inline-block align-text-center"><span>INTIMODA</span>
+            </a>
+            <!-- BOTON DESPEGABLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <!-- ITEMS DEL NAVABAR -->
+            <div class="collapse navbar-collapse" id="navegacion">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../EMPRESA/index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EMPRESA/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EMPRESA/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EMPRESA/blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EMPRESA/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTACTO -->
+    <section class="contacto color-secundario">
+        <div class="encabezado">
+            <h1>ESTAMOS AQUÍ PARA AYUDARTE</h1>
+            <p>Nos encantaria ayudarte a encontrar el mejor producto para tus ideas</p>
+        </div>
+        <div class="contenido">
+            <div class="divLocalizacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4603.476592136937!2d-77.01391072986267!3d-12.067026046974537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1726777956416!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="datos">
+                <div class="tiendas dato">
+                    <h3>Puedes encontrarnos en</h3>
+                    <p>Jr. Giribaldi</p>
+                    <p>Jr. Giribaldi</p>
+                </div>
+                <div class="horario dato color-primario">
+                    <h4>Horarios de Atención</h4>
+                    <p>Lunes a Viernes: </p>
+                    <p>Sabados: </p>
+                </div>
+                <div class="mobiles dato">
+                    <h3>Contactanos</h3>
+                    <div class="whatsapp">
+                        <a href="https://wa.me/51979139160" target="_blank"><i class="bi bi-whatsapp"></i> 9XX XXX XXX</a>
+                        <a href="https://wa.me/51933143778" target="_blank"><i class="bi bi-whatsapp"></i> 9XX XXX XXX</a>
+                    </div>
+                    <div class="telefono">
+                        <a href="tel:51933143778"><i class="bi bi-telephone"></i></i> 9XX XXX XXX</a>
+                        <a href=""><i class="bi bi-telephone"></i></i> 9XX XXX XXX</a>
+                    </div>
+                </div>
+                <div class="redes dato">
+                    <h4>Siguenos en nuestras redes</h4>
+                    <div>
+                        <a href=""><i class="bi bi-facebook"></i> @Intimoda</a>
+                        <a href=""><i class="bi bi-instagram"></i> @Intimoda</a>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario color-primario">
+        <form action="">
+            <label for="nombre">Nombre y apellido (*):
+                <input type="text" name="nombre" id="nombre" required>
+            </label>
+            <label for="email">Email (*):
+                <input type="email" name="email" id="" required>
+            </label>
+            <label for="telefono">Numero Telefonico (*):
+                <input type="number" name="telefono" id="telefono" required>
+            </label>
+            <fieldset>
+                Asunto:
+                <label for="cotizacion">
+                    <input type="radio" name="asunto" id="cotizacion">Cotizacion
+                </label>
+                <label for="informacion">
+                    <input type="radio" name="asunto" id="informacion">Informacion
+                </label>
+            </fieldset>
+            <label for="mensaje">Mensaje
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </label>
+            
+        </form>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="color-primario">
+        <div class="footer-row">
+            <div class="footer-content">
+                <h4>PRODUCTOS</h4>
+                <ul class="links">
+                    <li><a href="#">MELANGE</a></li>
+                    <li><a href="#">FRANELA</a></li>
+                    <li><a href="#">PIQUE</a></li>
+                    <li><a href="#">RIB</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>NOSOTROS</h4>
+                <ul class="links">
+                    <li><a href="#">MISION</a></li>
+                    <li><a href="#">VISION</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>CONTACTO</h4>
+                <ul class="links">
+                    <li>Jr. Luis giribaldi N° 738 Int. 217 La Victoria</li>
+                    <li>Jr. Luis giribaldi N° 651 Int. 11 y 12 La Victoria</li>
+                    <li>Telf: 981 271 001</li>
+                    <li>Telf: 946 161 903</li>
+                </ul>
+                <div class="icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h4>CORREO</h4>
+                <p>Envianos un correo para la cotización</p>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Correo electrónico">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <p class="derechosAutor">TODOS LOS DERECHOS RESERVADOS <span>@INTIMODA</span> - 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
